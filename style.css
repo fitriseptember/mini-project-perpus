@@ -1,0 +1,229 @@
+/* General Styles */
+/* Atur font global, warna latar belakang, warna teks, margin, dan padding */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFE5E5;
+    /* Warna latar belakang pastel */
+    color: #333;
+    /* Warna teks utama */
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya untuk container utama */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    /* Atur margin secara otomatis untuk sentralisasi */
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Tambahkan bayangan untuk kedalaman */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    /* Transisi untuk efek hover */
+}
+
+/* Efek hover pada container */
+.container:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    /* Perbesar bayangan saat hover */
+}
+
+/* Header Styles */
+/* Gaya untuk elemen header <h2> */
+h2 {
+    color: #E0AED0;
+    /* Warna teks header */
+    border-bottom: 3px solid #E0AED0;
+    /* Garis bawah dengan warna yang sama */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Book List Styles */
+/* Gaya untuk daftar buku */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Bungkus item agar sesuai dalam satu baris */
+    gap: 20px;
+    /* Jarak antar item */
+}
+
+/* Gaya untuk setiap item buku */
+.book-item {
+    background-color: #F6F5F2;
+    /* Warna latar belakang item buku */
+    border: 2px solid #AC87C5;
+    /* Warna border */
+    border-radius: 12px;
+    padding: 15px;
+    width: calc(25% - 20px);
+    /* Ukuran item dalam persentase */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Tambahkan bayangan pada item */
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    /* Transisi untuk efek hover */
+}
+
+/* Efek hover pada item buku */
+.book-item:hover {
+    transform: translateY(-10px);
+    /* Gerakkan item ke atas saat hover */
+    background-color: #F6F5F2;
+    /* Warna latar belakang saat hover */
+}
+
+/* Gaya untuk gambar buku */
+.book-item img {
+    max-width: 120px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    /* Transisi untuk efek zoom pada hover */
+}
+
+/* Efek hover pada gambar buku */
+.book-item img:hover {
+    transform: scale(1.1);
+    /* Perbesar gambar saat hover */
+}
+
+/* Gaya untuk judul buku */
+.book-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    /* Warna teks judul */
+}
+
+/* Gaya untuk detail buku (penulis dan ISBN) */
+.book-item p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+    /* Warna teks detail */
+}
+
+/* Gaya untuk link di dalam item buku */
+.book-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #E0AED0;
+    /* Warna latar belakang tombol */
+    color: #ffffff;
+    /* Warna teks tombol */
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    /* Transisi untuk efek hover */
+}
+
+/* Efek hover pada tombol link */
+.book-item a:hover {
+    background-color: #FFE5E5;
+    /* Ubah warna latar belakang tombol saat hover */
+}
+
+/* Form Styles */
+/* Gaya untuk formulir input */
+form {
+    margin-bottom: 30px;
+    /* Jarak bawah dari elemen lain */
+}
+
+/* Gaya untuk label dalam formulir */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    /* Warna teks label */
+}
+
+/* Gaya untuk input teks dan input file dalam formulir */
+form input[type="text"],
+form input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #AC87C5;
+    /* Warna border input */
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #FFE5E5;
+    /* Warna latar belakang input */
+    transition: border-color 0.3s;
+    /* Transisi untuk efek fokus */
+}
+
+/* Gaya untuk input saat fokus */
+form input[type="text"]:focus,
+form input[type="file"]:focus {
+    border-color: #F3D0D7;
+    /* Ubah warna border saat fokus */
+}
+
+/* Gaya untuk tombol submit dalam formulir */
+form input[type="submit"] {
+    background-color: #756AB6;
+    /* Warna latar belakang tombol */
+    color: #ffffff;
+    /* Warna teks tombol */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    /* Transisi untuk efek hover dan transformasi */
+}
+
+/* Efek hover pada tombol submit */
+form input[type="submit"]:hover {
+    background-color: #756AB6;
+    /* Warna latar belakang saat hover */
+    transform: translateY(-3px);
+    /* Gerakkan tombol ke atas saat hover */
+}
+
+/* Search Form Styles */
+/* Gaya khusus untuk formulir pencarian */
+form#search-form {
+    margin-top: 30px;
+    /* Jarak atas dari elemen lain */
+}
+
+/* Gaya untuk label dalam formulir pencarian */
+form#search-form label {
+    font-size: 1.1em;
+}
+
+/* Gaya untuk tombol submit dalam formulir pencarian */
+form#search-form input[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+    /* Jarak atas tombol */
+}
+
+/* Responsive Styles */
+/* Gaya responsif untuk layar dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+    .book-item {
+        width: calc(50% - 20px);
+        /* Item menjadi setengah lebar layar */
+    }
+}
+
+/* Gaya responsif untuk layar dengan lebar maksimum 480px */
+@media (max-width: 480px) {
+    .book-item {
+        width: calc(100% - 20px);
+        /* Item menjadi selebar layar */
+    }
+}
