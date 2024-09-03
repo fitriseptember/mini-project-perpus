@@ -49,7 +49,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <!-- Menampilkan pesan selamat datang dengan nama pengguna yang telah login -->
         <h1>Selamat datang, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h1>
         <!-- Tautan untuk logout -->
-        <a href="logout.php">Logout</a>
+        <a href="index.php">Masuk</a>
     </div>
 </body>
 

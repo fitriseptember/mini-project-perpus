@@ -161,6 +161,7 @@ $stmt = $book->readAll();
             }
         }
         ?>
+         <a href="login.php6">Logout</a>
     </div>
 </body>
 
